@@ -1,0 +1,19 @@
+name: uxarray-ecmwf-conf
+channels:
+  - conda-forge
+  - pyviz 
+dependencies:
+  - jupyterlab
+  - pip
+  # - uxarray uncomment if UxDataArray.plot.rasterize() gets released
+  - matplotlib
+  - scikit-learn
+  - spatialpandas
+  - shapely
+  - cartopy
+  - holoviews
+  - hvplot
+  - geoviews
+  - pip:
+      - git+https://github.com/UXARRAY/uxarray.git@plot_rasterize # - Remove if UxDataArray.plot.rasterize() gets released
+      - antimeridian
